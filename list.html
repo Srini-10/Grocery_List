@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+            <!-- Title of the Site -->
+        <title> List of Groceries </title>
+
+            <!-- List CSS -->
+        <link rel="stylesheet" type="text/css" href="List.css">
+
+            <!-- Meta Details -->
+        <meta charset="UTF-8">
+        <meta name="description" content="Websites Designing">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="@Team Sugar">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    </head>
+
+        <body>
+
+    <header id="headerDiv">
+        <a href="#"> <img class="headerAccountIcon" src="logos/Bca.png" width="55px" height="55px"> </a>
+            <h1>Gorcery List</h1>
+            
+            <div class="headerSearchBox">
+                <input type="text" name="Search" id="Search" placeholder="Search ...">
+            </div>
+
+        <a href="#"> <img class="headerSearchIcon" src="logos/Search Before.png" width="75px" height="75px"> </a>
+        <a href="#"> <img class="headerMenuIcon" src="logos/menu.png" width="55px" height="55px" onclick="openPopup()"> </a>
+
+                    <dropdownlist>
+                        <div class="ddList" id="ddList">
+                            <h2>About</h2>
+                                <p>bibyxnalubctbvnvbjbjkvbvuusnb<br/>
+                                   buybfctrtbujcvbbvcybcrtftbfc<br/>
+                                   bvjdcrtybuyj.
+                                </p>
+
+                            <hr class="ddLine"/>
+
+                            <h4>Copyright@2023</h4>
+                                <p id="p">All Rights Reserved</p>
+
+                            <hr class="ddLine"/>
+                        </div>
+                    </dropdownmenu>
+
+                    <script>
+                        let ddMenu = document.getElementById("ddList");
+    
+                        function openPopupL(){
+                            ddList.classList.toggle("openPopupL");
+                        }
+                    </script>
+
+    </header>
+
+    <list>
+        <div class="listDetails">
+
+        </div>
+            
+        <hr class="hrLine"/>
+
+    </list>
+
+    <footer id="footerDiv">
+        <a href="index.html" id="homeBefore"> <img src="logos/Home Before.png" onclick="homeBefore()" width="60px" height="60px"> </a>
+                <script>
+                    let homeBefore = document.getElementById("homeBefore");
+
+                    function homeBefore(){
+                        homeBefore.classList.toggle("homeAfter");
+                    }
+                </script>
+        <a href="category.html"> <img src="logos/Category Before.png" width="60px" height="60px"> </a>
+        <a href="cart.html"> <img src="logos/Cart Before.png" width="60px" height="60px"> </a>
+        <a href="list.html"> <img src="logos/List Before.png" width="60px" height="60px"> </a>
+        <a href="profile.html"> <img src="logos/Profile Before.png" width="60px" height="60px"> </a>
+    </footer>
+
+        </body>
+</html>
